@@ -6,11 +6,22 @@ import { Helmet } from "react-helmet-async";
 function GeHowToPlay() {
   return (
     <Fragment>
-      {/* <Helmet>
-        <title>Guess Eleven How To Play</title>
-        <meta name='description' content='Learn How To Play Guess Eleven!' />
-        <link rel='canonical' href='/guess-eleven/how-to-play' />
-      </Helmet> */}
+      <Head>
+        <title>How To Play - Guess Eleven</title>
+        <meta charset='UTF-8' />
+        <meta
+          name='description'
+          content='Learn how to play Guess-Eleven'
+        ></meta>
+        <meta
+          name='keywords'
+          content='how to play, guess eleven, football, missing eleven, guess, eleven, missing'
+        ></meta>
+        <meta
+          name='viewport'
+          content='width=device-width, initial-scale=1.0'
+        ></meta>
+      </Head>
       <div className='ge-how-to-play-root'>
         <HomeNavbar active='htp' />
         <div></div>

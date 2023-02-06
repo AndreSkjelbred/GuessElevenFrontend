@@ -26,6 +26,7 @@ import { useRef } from "react";
 import { initNewRound } from "../../store/redux/teamInfo";
 import createNewRound from "../../store/functions/model";
 import Image from "next/image";
+import Head from "next/head";
 
 const wait = (time) => {
   return new Promise((resolve) => {
@@ -34,107 +35,6 @@ const wait = (time) => {
     }, time * 1000);
   });
 };
-
-/* import $ from "jquery"; */
-
-/* const data = {
-  restock_database: true,
-}; */
-
-/* const data = {
-  formation: "4-3-3",
-  team: [
-    {
-      side: "away",
-      name: "Liverpool",
-      winner: true,
-    },
-  ],
-  opponent: [
-    {
-      side: "home",
-      name: "Bayern Munich",
-      winner: false,
-    },
-  ],
-  score: [
-    {
-      home: 1,
-      away: 3,
-    },
-  ],
-  logo: "https://media.api-sports.io/football/teams/40.png",
-  stadium: "Allianz Arena",
-  date: "2019-03-13",
-  league: "UEFA Champions League",
-  season: "2018",
-  round: "8th Finals",
-  startxi: {
-    G: [
-      {
-        name: "Alisson",
-        number: "13",
-        photo: "https://media.api-sports.io/football/players/280.png",
-      },
-    ],
-    D: [
-      {
-        name: "Matip",
-        number: "32",
-        photo: "https://media.api-sports.io/football/players/286.png",
-      },
-      {
-        name: "Dijk",
-        number: "4",
-        photo: "None",
-      },
-      {
-        name: "Robertson",
-        number: "26",
-        photo: "https://media.api-sports.io/football/players/289.png",
-      },
-      {
-        name: "Alexander-Arnold",
-        number: "66",
-        photo: "https://media.api-sports.io/football/players/283.png",
-      },
-    ],
-    M: [
-      {
-        name: "Milner",
-        number: "7",
-        photo: "https://media.api-sports.io/football/players/296.png",
-      },
-      {
-        name: "Wijnaldum",
-        number: "5",
-        photo: "https://media.api-sports.io/football/players/300.png",
-      },
-      {
-        name: "Henderson",
-        number: "14",
-        photo: "https://media.api-sports.io/football/players/292.png",
-      },
-    ],
-    F: [
-      {
-        name: "Firmino",
-        number: "9",
-        photo: "https://media.api-sports.io/football/players/302.png",
-      },
-      {
-        name: "Salah",
-        number: "11",
-        photo: "https://media.api-sports.io/football/players/306.png",
-      },
-      {
-        name: "Mane",
-        number: "10",
-        photo: "https://media.api-sports.io/football/players/304.png",
-      },
-    ],
-  },
-}; */
 
 function GuessEleven() {
   const dispatch = useDispatch();
@@ -187,24 +87,24 @@ function GuessEleven() {
 
   const { isModalOpen } = useSelector((state) => state.guessEleven);
 
-  function TeamLogo({ teamLogo }) {
-    return (
-      <div className='primary-team-logo img'>
-        <Image alt='primary team' src={teamLogo} />
-      </div>
-    );
-  }
-
   return (
     <Fragment>
-      {/*  <Helmet>
-        <title>Guess Eleven</title>
+      <Head>
+        <title>Guess-Eleven</title>
+        <meta charset='UTF-8' />
         <meta
           name='description'
-          content='Prove Your Immense Ball Knowledge And Play Guess Eleven!'
-        />
-        <link rel='canonical' href='/guess-eleven' />
-      </Helmet> */}
+          content='Play Guess-Eleven Here and Prove Your Football knowledge to the world'
+        ></meta>
+        <meta
+          name='keywords'
+          content='guess eleven, football, missing eleven, guess, eleven, missing'
+        ></meta>
+        <meta
+          name='viewport'
+          content='width=device-width, initial-scale=1.0'
+        ></meta>
+      </Head>
       <div className={`guess-eleven-container `}>
         <HomeNavbar />
         {!gameBegun && <LoadingScreen />}

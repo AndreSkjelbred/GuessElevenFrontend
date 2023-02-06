@@ -41,11 +41,22 @@ export default function Home() {
 
   return imgsLoaded ? (
     <Fragment>
-      {/*  <Helmet>
-          <title>Twire Arcade</title>
-          <meta name='description' content='Test Your Ball Knowledge Here' />
-          <link rel='canonical' href='/' />
-        </Helmet> */}
+      <Head>
+        <title>Twire Arcade - Guess-Eleven and more!</title>
+        <meta charset='UTF-8' />
+        <meta
+          name='description'
+          content='The Brand New Football Arcade With Popular New Games Like Guess-Eleven'
+        ></meta>
+        <meta
+          name='keywords'
+          content='twire, twire arcade, guess eleven, football, missing eleven, guess, eleven, missing'
+        ></meta>
+        <meta
+          name='viewport'
+          content='width=device-width, initial-scale=1.0'
+        ></meta>
+      </Head>
       <div className='root-container'>
         <Confetti />
         <HomeNavbar active='home' />
