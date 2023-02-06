@@ -2,6 +2,7 @@ import HomeNavbar from "../../../components/home/homeNavbar/homeNavbar.component
 import HtpCircle from "../../../components/howToPlay/htpCircle/htpCircle.component";
 import { Fragment } from "react";
 import { Helmet } from "react-helmet-async";
+import Head from "next/head";
 
 function GeHowToPlay() {
   return (

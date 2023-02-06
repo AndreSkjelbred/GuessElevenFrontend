@@ -5,6 +5,7 @@ import HomeNavbar from "../components/home/homeNavbar/homeNavbar.component";
 import HomeGameNav from "@/components/home/homeGameNav/homeGameNav.component";
 import GameReviews from "@/components/home/gameReviews/gameReviews.component";
 import LoadingScreen from "@/screens/loadingScreen/loadingScreen.component";
+import Head from "next/head";
 
 import * as url from "./homePageMain.jpg";
 import { useDispatch } from "react-redux";
