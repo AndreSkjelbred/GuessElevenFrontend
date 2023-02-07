@@ -57,6 +57,10 @@ export default function Home() {
           name='viewport'
           content='width=device-width, initial-scale=1.0'
         ></meta>
+        <meta
+          name='google-site-verification'
+          content='8En94HVVv_-Reu3yzqhPfUPpNOxyDf03rjFzb7uZM74'
+        />
       </Head>
       <div className='root-container'>
         <Confetti />
